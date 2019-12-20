@@ -36,9 +36,11 @@ Cuboid.prototype.volume = function() {
 Cuboid.prototype.surfaceArea = function() {
   return (
     2 *
-    (this.length * this.width +
+    (
+      this.length * this.width +
       this.length * this.height +
-      this.width * this.height)
+      this.width * this.height
+    )
   );
 };
 
